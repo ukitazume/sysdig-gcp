@@ -6,9 +6,14 @@ variable "region" {
   description = "region"
 }
 
+variable "gcp-creds" {
+  default= ""
+}
+
 provider "google" {
   project = var.project_id
   region  = var.region
+  credentials = var.gcp-creds
 }
 
 # VPC

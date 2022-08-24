@@ -53,6 +53,10 @@ resource "google_container_node_pool" "primary_nodes" {
     metadata = {
       disable-legacy-endpoints = "true"
     }
+
+    lifecycle {
+      create_before_destroy = true
+    }
   }
 }
 

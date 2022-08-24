@@ -10,7 +10,7 @@ terraform {
     organization = "ukitazume"
 
     workspaces {
-      tags = ["sysdig", "gcp"]
+      name = "sysdig-gcp"
     }
   }
 

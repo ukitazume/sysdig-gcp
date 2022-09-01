@@ -54,9 +54,9 @@ resource "google_container_node_pool" "primary_nodes" {
       disable-legacy-endpoints = "true"
     }
 
-    lifecycle {
-      create_before_destroy = true
-    }
+  }
+  lifecycle {
+    create_before_destroy = true
   }
 }
 

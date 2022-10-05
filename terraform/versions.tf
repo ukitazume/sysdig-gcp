@@ -4,6 +4,10 @@ terraform {
       source  = "hashicorp/google"
       version = "4.33.0"
     }
+
+    sysdig = {
+      source  = "sysdiglabs/sysdig"
+    }
   }
 
   cloud {
